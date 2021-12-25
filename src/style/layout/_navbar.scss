@@ -1,0 +1,24 @@
+@import '../abstract/mixin';
+@import '../abstract/varibles';
+@import '../base/typography';
+
+.cafe__header {
+  @include show_div;
+  // @include flex-wrapper;
+  height: 7rem;
+  // height: 70px;
+  font-size: 1.6rem;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  // background: #fff;
+  &__logo {
+    // font-family: $font;
+    font-size: 2rem;
+    @extend %font-logo;
+    span {
+      color: $theme-primary;
+    }
+  }
+  
+}
