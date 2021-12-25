@@ -1,0 +1,18 @@
+// Media Query
+@mixin respond($breakpoint) {
+  @if $breakpoint == small_screen {
+    @media (max-width: 400px) { @content };
+  }
+
+  @if $breakpoint == medium_screen {
+    @media (max-width: 800px) { @content };
+  }
+
+  @if $breakpoint == large_screen {
+    @media (max-width: 1200px) { @content };
+  }
+
+  @if $breakpoint == ultra_screen {
+    @media (max-width: 1600px) { @content };
+  }
+}

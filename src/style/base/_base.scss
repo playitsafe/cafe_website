@@ -1,0 +1,24 @@
+@import '../abstract/varibles';
+@import './typography';
+/*-- Prevent Horizontal Scrolling & Font Style --*/
+html, body {
+  overflow-x: hidden;
+  @extend %font-body;
+}
+
+h1,h2,h3,h4,h5 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  li {
+    float: left;
+  }
+}
