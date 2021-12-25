@@ -2,23 +2,22 @@
 @import '../abstract/varibles';
 @import '../base/typography';
 
+
 .cafe__header {
   @include show_div;
   // @include flex-wrapper;
-  height: 7rem;
-  // height: 70px;
+  height: 5.5rem;
   font-size: 1.6rem;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // background: #fff;
+  margin: 0 auto;
   &__logo {
-    // font-family: $font;
     font-size: 2rem;
     @extend %font-logo;
     span {
       color: $theme-primary;
     }
   }
-  
+  @include respond(medium_screen) {
+    height: 7rem;
+    max-width: 120rem;
+  }
 }

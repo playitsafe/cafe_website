@@ -45,14 +45,21 @@ html, body {
 
 .cafe__header {
   border: 1px solid red;
-  height: 7rem;
+  height: 5.5rem;
   font-size: 1.6rem;
+  margin: 0 auto;
 }
 .cafe__header__logo {
   font-size: 2rem;
 }
 .cafe__header__logo span {
   color: #FF5200;
+}
+@media (min-width: 576px) {
+  .cafe__header {
+    height: 7rem;
+    max-width: 120rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
