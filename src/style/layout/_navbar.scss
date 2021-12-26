@@ -4,11 +4,19 @@
 
 
 .cafe__header {
-  @include show_div;
   // @include flex-wrapper;
   height: 5.5rem;
   font-size: 1.6rem;
   margin: 0 auto;
+
+  &.header--darken {
+    background-color: rgba(0, 0, 0, .2);
+  }
+
+  .offcanvas {
+    background-color: rgba(0, 0, 0, .7);
+    width: 30rem;
+  }
   &__logo {
     font-size: 2rem;
     @extend %font-logo;
@@ -19,5 +27,8 @@
   @include respond(medium_screen) {
     height: 7rem;
     max-width: 120rem;
+    .offcanvas {
+      background-color: rgba(0, 0, 0, 0);
+    }
   }
 }

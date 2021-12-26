@@ -1,0 +1,93 @@
+.cafe__header__logo {
+  font-family: "Fredoka One", cursive;
+}
+
+html, body {
+  font-family: "Merriweather", serif;
+}
+
+/*-- Prevent Horizontal Scrolling & Font Style --*/
+html, body {
+  overflow-x: hidden;
+  /* Use percentage to reset 1rem = 10px */
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.6rem;
+}
+a:hover, a:focus {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+ul li {
+  float: left;
+}
+
+.cafe__header__logo {
+  font-family: "Fredoka One", cursive;
+}
+
+html, body {
+  font-family: "Merriweather", serif;
+}
+
+.cafe__header {
+  height: 5.5rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+.cafe__header.header--darken {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.cafe__header .offcanvas {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30rem;
+}
+.cafe__header__logo {
+  font-size: 2rem;
+}
+.cafe__header__logo span {
+  color: #FF5200;
+}
+@media (min-width: 576px) {
+  .cafe__header {
+    height: 7rem;
+    max-width: 120rem;
+  }
+  .cafe__header .offcanvas {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.home__bg {
+  width: 100%;
+  height: 100vh;
+}
+.home__bg--inner {
+  background-image: url("../../../resource/img/xhero_bg.webp");
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.menu {
+  font-size: 10rem;
+  background-color: red;
+}
+
+/*# sourceMappingURL=index.css.map */
