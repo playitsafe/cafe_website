@@ -12,15 +12,16 @@ html, body {
   /* Use percentage to reset 1rem = 10px */
   font-size: 62.5%; // 1rem = 10px
 
-  // @include respond(medium_screen) {
-  //   font-size: 56.25%; // 1rem = 9px
+  @include respond(medium_screen) {
+    // font-size: 56.25%; // 1rem = 9px
+    // font-size: 68%; // 1rem = 9px
 
-  // }
+  }
 
-  // @include respond(large_screen) {
-  //   font-size: 50%; // 1rem = 8px
-  //   background-color: pink;
-  // }
+  @include respond(large_screen) {
+    // font-size: 75%; // 1rem = 8px
+    // background-color: pink;
+  }
 }
 
 h1,h2,h3,h4,h5 {
@@ -31,11 +32,11 @@ h1,h2,h3,h4,h5 {
 a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.6rem;
+  // font-size: inherit;
 
   &:hover, &:focus {
     color: inherit;
-
+    // font-size: inherit;
   }
 }
 
