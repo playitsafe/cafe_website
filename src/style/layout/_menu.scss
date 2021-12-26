@@ -1,0 +1,84 @@
+@import '../abstract/variables';
+
+.menu {
+  background: $theme-secondary;
+  padding: 5rem 0;
+  &__control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+      p {
+        font-size: 1.2rem;
+        color: rgba(0,0,0,.5);
+        letter-spacing: .1rem;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 3.5rem;
+        span {
+          color: $theme-primary;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__tabs {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      padding: 0 2rem;
+      &__item {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        margin-top: 1.5rem;
+        cursor: pointer;
+
+        &.active {
+          background: #fff;
+          border-radius: 3rem;
+          box-shadow: .05rem 1rem 2rem rgba(0, 0, 0, 0.123);
+        }
+        img {
+          width: 2.5rem;
+        }
+        span {
+          font-size: 1.8rem;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  &__display {
+    // background-color: red;
+    padding: 0 1.5rem;
+
+    &__pages {
+      &__section {
+        .menu__title {
+        }
+        .menu__items {
+          &__item {
+            &__img {
+
+            }
+
+            &__title {
+
+            }
+
+            &__price {
+              color: $theme-primary;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
