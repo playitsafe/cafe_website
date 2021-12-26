@@ -10,6 +10,7 @@
     // z-index: -1;
 
     &--inner {
+      // clip: rect(0, auto, auto, 0);
       background-image: url('../../../resource/img/xhero_bg.webp');
       position: fixed;
       height: 100%;

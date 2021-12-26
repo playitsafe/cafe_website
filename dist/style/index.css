@@ -47,6 +47,7 @@ html, body {
   height: 5.5rem;
   font-size: 1.6rem;
   margin: 0 auto;
+  transition: ease 0.4s;
 }
 .cafe__header.header--darken {
   background-color: rgba(0, 0, 0, 0.2);

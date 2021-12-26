@@ -3,6 +3,9 @@
 @import '../abstract/mixin';
 
 /*-- Prevent Horizontal Scrolling & Font Style --*/
+* {
+  // transition: ease .3s;
+}
 html, body {
   @extend %font-body;
   overflow-x: hidden;
