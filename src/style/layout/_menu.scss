@@ -37,6 +37,7 @@
         padding: 1.5rem 2rem;
         margin-top: 1.5rem;
         cursor: pointer;
+        transition: all ease-in-out .2s;
 
         &.active {
           background: #fff;
