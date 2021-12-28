@@ -37,21 +37,21 @@
       &__subtitle {
         font-size: 1.2rem;
         letter-spacing: .1rem;
-        animation: fadeInUp .8s;
+        animation: fadeInUp 1s;
       }
   
       &__title {
         font-size: 4.6rem;
         font-weight: 700;
         text-shadow: 0.1rem 0.1rem 2rem black;
-        animation: fadeInUp .8s;
+        animation: fadeInUp 1s;
       }
   
       &__desc {
         font-size: 1.8rem;
         margin-top: 4rem;
         text-shadow: 0.1rem 0.1rem 2rem black;
-        animation: fadeInUp .8s;
+        animation: fadeInUp 1s;
       }
   
       &__btn {
@@ -59,7 +59,7 @@
         @extend %font-body;
         font-weight: 900;
         font-size: 1.6rem;
-        animation: fadeInUp .8s;
+        animation: fadeInUp 1s;
       }
     }
 

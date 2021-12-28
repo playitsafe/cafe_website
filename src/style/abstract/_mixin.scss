@@ -8,6 +8,10 @@
     @media (min-width: 576px) { @content };
   }
 
+  @if $breakpoint == tab_screen {
+    @media (min-width: 900px) { @content };
+  }
+
   @if $breakpoint == large_screen {
     @media (min-width: 1200px) { @content };
   }
