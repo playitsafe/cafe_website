@@ -11,6 +11,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      &.hidden {
+        visibility: hidden;
+      }
   
       &__header {
         width: 100%;
@@ -64,6 +67,9 @@
   
     &__display {
       // background-color: red;
+      &.hidden {
+        visibility: hidden;
+      }
       padding: 0 1.5rem;
   
       &__pages {
