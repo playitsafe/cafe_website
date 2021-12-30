@@ -37,21 +37,20 @@
       &__subtitle {
         font-size: 1.2rem;
         letter-spacing: .1rem;
-        // animation: fadeInUp 1s;
+        margin-bottom: 2rem;
       }
   
       &__title {
         font-size: 4.6rem;
         font-weight: 700;
         text-shadow: 0.1rem 0.1rem 2rem black;
-        // animation: fadeInUp 1s;
       }
   
       &__desc {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-top: 4rem;
         text-shadow: 0.1rem 0.1rem 2rem black;
-        // animation: fadeInUp 1s;
+        letter-spacing: .1rem;
       }
   
       &__btn {
@@ -59,7 +58,6 @@
         @extend %font-body;
         font-weight: 900;
         font-size: 1.6rem;
-        // animation: fadeInUp 1s;
       }
     }
 
@@ -123,6 +121,10 @@
           font-size: 5rem;
           font-weight: 700;
           text-shadow: 0.1rem 0.1rem 2rem black;
+        }
+
+        &__desc {
+          font-size: 2rem;
         }
       }
     }

@@ -1,0 +1,16 @@
+%section_title {
+  p {
+    font-size: 1.2rem;
+    color: rgba(0,0,0,.5);
+    letter-spacing: .1rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    span {
+      color: $theme-primary;
+      font-weight: 700;
+    }
+  }
+}
