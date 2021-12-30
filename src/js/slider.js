@@ -43,4 +43,18 @@ export default function () {
   menuSlider.events.on('indexChanged', function() {
     switchActiveMenu(menuSlider.getInfo().index -1)
   })
+
+  // Testimonial Slider
+  const testmonialSlider = tns({
+    container: '.testimonial_slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true,
+    controls: false,
+    navPosition: 'bottom',
+    nav: true,
+    // navAsThumbnails: true,
+    // autoplayButton: false,
+    autoplayButtonOutput: false
+  });
 }
