@@ -1,3 +1,13 @@
 @import './base/base';
-@import './abstract/mixin';
+@import './base/global';
+
+// @import './abstract/mixin';
+
+@import './layout/navbar';
+@import './layout/home';
+@import './components/button';
+@import './layout/menu';
+@import './layout/popular';
+@import './layout/gallery';
+@import './layout/contact';
 

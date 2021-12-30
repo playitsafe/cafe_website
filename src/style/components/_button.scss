@@ -1,0 +1,19 @@
+@import '../abstract/variables';
+
+.theme-button {
+  display: inline-block;
+  background-color: $theme-primary;
+  text-transform: uppercase;
+  padding: 1.6rem 2.2rem;
+  border-radius: 4rem;
+  transition: all .2s ease-in-out;;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: translateY(.1rem);
+    box-shadow: 5px 10px 20px $theme-primary-dark inset;
+  }
+}

@@ -1,0 +1,34 @@
+@import '../abstract/mixin';
+@import '../abstract/variables';
+@import '../base/typography';
+
+
+.cafe__header {
+  // @include flex-wrapper;
+  height: 5.5rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  transition: ease .4s;
+
+  &.header--darken {
+    background-color: rgba(0, 0, 0, .6);
+  }
+
+  .offcanvas {
+    background-color: rgba(0, 0, 0, .7);
+    width: 30rem;
+  }
+  &__logo {
+    font-size: 2rem;
+    @extend %font-logo;
+    span {
+      color: $theme-primary;
+    }
+  }
+  @include respond(medium_screen) {
+    height: 7rem;
+    .offcanvas {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}
