@@ -1,18 +1,34 @@
 // Media Query
 @mixin respond($breakpoint) {
   @if $breakpoint == small_screen {
-    @media (max-width: 400px) { @content };
+    @media (min-width: 400px) { @content };
   }
 
   @if $breakpoint == medium_screen {
-    @media (max-width: 800px) { @content };
+    @media (min-width: 576px) { @content };
+  }
+
+  @if $breakpoint == tab_screen {
+    @media (min-width: 900px) { @content };
   }
 
   @if $breakpoint == large_screen {
-    @media (max-width: 1200px) { @content };
+    @media (min-width: 1200px) { @content };
   }
 
   @if $breakpoint == ultra_screen {
-    @media (max-width: 1600px) { @content };
+    @media (min-width: 1600px) { @content };
   }
 }
+
+@mixin flex-wrapper($direction: row, $x: space-between, $y: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $x;
+  align-items: $y;
+}
+
+@mixin show_div {
+  border: 1px solid red;
+}
+

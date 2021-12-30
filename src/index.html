@@ -6,14 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap CSS -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/40a102f638.js" crossorigin="anonymous"></script>
+
+  <!-- Tiny Slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 
   <!-- Own stylesheet -->
   <link rel="stylesheet" href="../dist/style/index.css">
@@ -22,22 +30,312 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#">Meal<span>.</span></a>
-      <a href="#reservation">Book A Table</a>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#popular">Popular</a></li>
-        <li><a href="#testimonial">Testimonial</a></li>
-        <li><a href="#map">Map</a></li>
-      </ul>
+    <!-- Navbar starts -->
+    <nav class="cafe__header navbar navbar-dark navbar-expand-sm fixed-top" id="navbar">
+      <div class="container-fluid">
+        <a href="#" class="cafe__header__logo navbar-brand">Czeg<span>'</span>s</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Site Map</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#popular">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#map">Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
-
+    <!-- Navbar ends -->
   </header>
   <main>
+    <section id="home" class="home">
+      <!-- Background Img Start -->
+      <div class="home__bg">
+        <div class="home__bg--inner"></div>
+      </div>
+      <!-- Background Img End -->
+      <div class="home__content">
+        <div class="home__content__inner">
+          <p class="home__content__inner__subtitle aniamted--fade_in_up">ENJOY YOUR HEALTHY DELICIOUS MEAL</p>
+          <h1 class="home__content__inner__title aniamted--fade_in_up">Treat Yourself</h1>
+          <p class="home__content__inner__desc aniamted--fade_in_up">With an extensive breakfast and lunch menu which includes Gluten Free, Vegetarian and Vegan options as well as the best coffee!</p>
+          <a href="#" class="theme-button home__content__inner__btn aniamted--fade_in_up">Explore Now</a>
+        </div>
+      </div>
+      <div class="home__social">
+        <div class="home__social__icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="home__social__icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="home__social__icon">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="home__social__icon">
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+      <div class="home__arrow">
+        <a href="#menu"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </section>
+    <section id="menu" class="menu__wrapper">
+      <div class="menu">
+        <div class="menu__control hidden" id="menu__control">
+          <div class="menu__control__header">
+            <p>SELECT YOUR MEAL</p>
+            <h2>Popular <span>Foods</span></h2>
+          </div>
+          <ul id="menu_nav" class="menu__control__tabs">
+            <li class="menu__control__tabs__item active">
+              <img src="../resource/img/menu/icon_brekky.webp" alt="breakfast icon">
+              <span>Breakfast</span> 
+            </li>
+            <li class="menu__control__tabs__item">
+              <img src="../resource/img/menu/icon_lunch.webp" alt="breakfast icon">
+              <span>Lunch</span> 
+            </li>
+            <li class="menu__control__tabs__item">
+              <img src="../resource/img/menu/icon_dinner.webp" alt="breakfast icon">
+              <span>Dinner</span> 
+            </li>
+            <li class="menu__control__tabs__item">
+              <img src="../resource/img/menu/icon_drink.webp" alt="breakfast icon">
+              <span>Drinks</span> 
+            </li>
+          </ul>
+        </div>
+        <div class="menu__display hidden" id="menu__display">
+          <ul class="menu-slider menu__display__pages">
+            <!-- Breakfaset Menu -->
+            <li class="menu__display__pages__section">
+              <h2 class="menu__title">Breakfast</h2>
+              <ul class="menu__items">
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/breakfast1.webp" alt="breakfast">
+                  </div>
+                  <h3 class="menu__items__item__title">Eggs Bennedict</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/breakfast2.webp" alt="breakfast">
+                  </div>
+                  <h3 class="menu__items__item__title">Beets & Cheese </h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/breakfast3.webp" alt="breakfast">
+                  </div>
+                  <h3 class="menu__items__item__title">Eggs Royale</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/breakfast4.webp" alt="breakfast">
+                  </div>
+                  <h3 class="menu__items__item__title">Big Brekky</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+              </ul>
+            </li>
+            <!-- Lunch Menu -->
+            <li class="menu__display__pages__section">
+              <h2 class="menu__title">Lunch</h2>
+              <ul class="menu__items">
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/lunch1.webp" alt="lunch">
+                  </div>
+                  <h3 class="menu__items__item__title">Eggs Bennedict</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/lunch2.webp" alt="lunch">
+                  </div>
+                  <h3 class="menu__items__item__title">Beets & Cheese </h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/lunch3.webp" alt="lunch">
+                  </div>
+                  <h3 class="menu__items__item__title">Eggs Royale</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/lunch4.webp" alt="lunch">
+                  </div>
+                  <h3 class="menu__items__item__title">Big Brekky</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+              </ul>
+            </li>
+            <!-- Dinner Menu -->
+            <li class="menu__display__pages__section">
+              <h2 class="menu__title">Dinner</h2>
+              <ul class="menu__items">
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/breakfast1.webp" alt="dinner">
+                  </div>
+                  <h3 class="menu__items__item__title">Eggs Bennedict</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/breakfast2.webp" alt="dinner">
+                  </div>
+                  <h3 class="menu__items__item__title">Beets & Cheese </h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/breakfast3.webp" alt="dinner">
+                  </div>
+                  <h3 class="menu__items__item__title">Eggs Royale</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/breakfast4.webp" alt="dinner">
+                  </div>
+                  <h3 class="menu__items__item__title">Big Brekky</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+              </ul>
+            </li>
+            <!-- Drink Menu -->
+            <li class="menu__display__pages__section">
+              <h2 class="menu__title">Drinks</h2>
+              <ul class="menu__items">
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/drink1.webp" alt="drink">
+                  </div>
+                  <h3 class="menu__items__item__title">Eggs Bennedict</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/drink2.webp" alt="drink">
+                  </div>
+                  <h3 class="menu__items__item__title">Beets & Cheese </h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/drink3.webp" alt="drink">
+                  </div>
+                  <h3 class="menu__items__item__title">Eggs Royale</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+                <li class="menu__items__item">
+                  <div class="menu__items__item__img">
+                    <img src="../resource/img/menu/drink4.webp" alt="drink">
+                  </div>
+                  <h3 class="menu__items__item__title">Big Brekky</h3>
+                  <p class="menu__items__item__price">$19.00</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="popular" class="popular__wrapper">
+      <div class="popular">
+        <div class="popular__header">
+          <p>CHOOSE DESSERT</p>
+          <h2>Popular <span>Desserts</span></h2>
+        </div>
+        <ul class="popular__display">
+          <li class="popular__display__grid">
+            <a href="#" class="grid__inner">
+              <div class="grid__inner__img">
+                <img src="../resource/img/popular/muffin1.webp" alt="muffin">
+              </div>
+              <div class="grid__inner__detail">
+                <h3>Cherry Muffin</h3>
+                <p>$7.00</p>
+              </div>
+            </a>
+          </li>
+          <li class="popular__display__grid">
+            <a href="#" class="grid__inner">
+              <div class="grid__inner__img">
+                <img src="../resource/img/popular/muffin2.webp" alt="muffin">
+              </div>
+              <div class="grid__inner__detail">
+                <h3>Vanilla Slice</h3>
+                <p>$7.00</p>
+              </div>
+            </a>
+          </li>
+          <li class="popular__display__grid">
+            <a href="#" class="grid__inner">
+              <div class="grid__inner__img">
+                <img src="../resource/img/popular/donut.webp" alt="muffin">
+              </div>
+              <div class="grid__inner__detail">
+                <h3>Strwberry Donut</h3>
+                <p>$7.00</p>
+              </div>
+            </a>
+          </li>
+          <li class="popular__display__grid">
+            <a href="#" class="grid__inner">
+              <div class="grid__inner__img">
+                <img src="../resource/img/popular/cake.webp" alt="muffin">
+              </div>
+              <div class="grid__inner__detail">
+                <h3>Choco Cake</h3>
+                <p>$7.00</p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
   </main>
   <footer></footer>
   
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous" defer></script>
+  <!-- Tiny Slider JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <!-- Waypoints JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" defer></script>
+  <!-- Own JS Scr -->
+  <script src="./js/index.js" type="module" defer></script>
 </body>
 </html>
