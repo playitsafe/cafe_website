@@ -21,8 +21,11 @@
   <script src="https://kit.fontawesome.com/40a102f638.js" crossorigin="anonymous" defer></script>
 
   <!-- Tiny Slider -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
+  <!-- FancyBox CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
   <!-- Own stylesheet -->
   <link rel="stylesheet" href="../dist/style/index.css">
 
@@ -361,8 +364,29 @@
               </li>
             </ul>
           </div>
-          <div class="gallery__content__photos">
-            
+          <div class="gallery__content__inner__photos">
+            <div class="gallery__content__inner__photos__header">
+              <p>GALLERIES</p>
+              <h2>Photo <span>Galleries</span></h2>
+            </div>
+            <div class="gallery__content__inner__photos__content">
+              <ul class="gallery__images">
+                <li class="gallery__images__grid">
+                  <a data-caption="Breakfast" data-fancybox="gallery"
+                  href="../resource/img/menu/breakfast1.webp">
+                    <img src="../resource/img/menu/breakfast1.webp" alt="breakfast">
+                  </a>
+                </li>
+                <li class="gallery__images__grid">
+                  <a data-caption="Breakfast" data-fancybox="gallery"
+                  href="../resource/img/menu/breakfast2.webp">
+                    <img src="../resource/img/menu/breakfast2.webp" alt="breakfast">
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+            <a class="theme-button" href="#">MORE GALLERIES</a>
           </div>
 
         </div>
@@ -379,6 +403,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.js" defer></script>
   <!-- Waypoints JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" defer></script>
+
+  <!-- Fancybox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
   <!-- Own JS Scr -->
   <script src="./js/index.js" type="module" defer></script>
 </body>
