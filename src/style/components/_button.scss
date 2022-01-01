@@ -1,6 +1,7 @@
 @import '../abstract/variables';
 
 .theme-button {
+  color: #fff;
   display: inline-block;
   background-color: $theme-primary;
   text-transform: uppercase;
@@ -10,7 +11,8 @@
   
   &:hover {
     transform: scale(1.1);
-  }
+    color: #fff;
+}
 
   &:active {
     transform: translateY(.1rem);

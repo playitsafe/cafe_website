@@ -328,7 +328,7 @@
         </ul>
       </div>
     </section>
-    <section id="gallery" class="gallery">
+    <section id="testimonial" class="gallery">
       <div class="gallery__bg">
         <div class="gallery__bg__img">
         </div>
@@ -372,25 +372,39 @@
             <div class="gallery__content__inner__photos__content">
               <ul class="gallery__images">
                 <li class="gallery__images__grid">
-                  <a data-caption="Breakfast" data-fancybox="gallery"
+                  <a class="gallery__images__grid__inner" data-caption="Breakfast" data-fancybox="gallery"
                   href="../resource/img/menu/breakfast1.webp">
                     <img src="../resource/img/menu/breakfast1.webp" alt="breakfast">
                   </a>
                 </li>
                 <li class="gallery__images__grid">
-                  <a data-caption="Breakfast" data-fancybox="gallery"
+                  <a class="gallery__images__grid__inner" data-caption="Breakfast" data-fancybox="gallery"
                   href="../resource/img/menu/breakfast2.webp">
                     <img src="../resource/img/menu/breakfast2.webp" alt="breakfast">
                   </a>
                 </li>
-
+                <li class="gallery__images__grid">
+                  <a class="gallery__images__grid__inner" data-caption="Breakfast" data-fancybox="gallery"
+                  href="../resource/img/menu/breakfast3.webp">
+                    <img src="../resource/img/menu/breakfast3.webp" alt="breakfast">
+                  </a>
+                </li>
+                <li class="gallery__images__grid">
+                  <a class="gallery__images__grid__inner" data-caption="Breakfast" data-fancybox="gallery"
+                  href="../resource/img/menu/breakfast4.webp">
+                    <img src="../resource/img/menu/breakfast4.webp" alt="breakfast">
+                  </a>
+                </li>
               </ul>
+              <a class="gallery__content__inner__photos__content__btn theme-button" href="#">MORE GALLERIES</a>
             </div>
-            <a class="theme-button" href="#">MORE GALLERIES</a>
           </div>
 
         </div>
       </div>
+    </section>
+    <section id="map" class="map">
+      <div class="gmap"></div>
     </section>
     <section class="contact"></section>
   </main>
@@ -406,6 +420,12 @@
 
   <!-- Fancybox JS -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+  <!-- Gmap -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjtuRAfYU-_q6zseKjjcJiYxT0mxcr3qI&callback=initMap">
+  </script>
+
 
   <!-- Own JS Scr -->
   <script src="./js/index.js" type="module" defer></script>
