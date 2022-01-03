@@ -5,6 +5,8 @@
 .map {
   background: $theme-secondary;
   &__inner {
+    max-width: $inner-max-width;
+    margin: 0 auto;
     &__desc {
       @extend %section_title;
       padding: 2rem .5rem;
