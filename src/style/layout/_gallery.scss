@@ -1,5 +1,7 @@
 @import '../abstract/variables';
 @import '../components/section_title';
+@import '../components/rounded_img';
+@import '../abstract/mixin';
 
 .gallery {
   position: relative;
@@ -10,6 +12,7 @@
     width: 100%;
     height: 100%;
     clip: rect(0, auto, auto, 0);
+    z-index: -1;
 
     &__img {
       position: fixed;
@@ -32,6 +35,7 @@
       max-width: $inner-max-width;
       margin: 0 auto;
       &__testimonials {
+        margin-bottom: 2rem;
         &__header {
           @extend %section_title;
         }
@@ -80,7 +84,7 @@
               border-radius: 50%;
             }
             .tns-nav-active {
-            background-color: $theme-primary;
+              background-color: $theme-primary;
 
             }
           }
@@ -88,6 +92,48 @@
 
       }
 
+      &__photos {
+        &__header {
+          @extend %section_title;
+        }
+
+        &__content {
+          padding: 4rem 1.5rem;
+          .gallery__images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &__grid {
+              width: 46%;
+              margin-bottom: 3rem;
+              &__inner {
+                display: block;
+                cursor: pointer;
+                @extend %rounded_img;
+              }
+            }
+          }
+          &__btn {
+            font-size: 1.2rem;
+          }
+        }
+
+      }
+    }
+  }
+
+  @include respond(tab_screen) {
+    &__content {
+      &__inner {
+        display: flex;
+        &__testimonials {
+          width: 50%;
+        }
+        &__photos {
+          width: 50%;
+
+        }
+      }
     }
   }
 

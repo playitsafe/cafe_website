@@ -1,0 +1,86 @@
+@import '../abstract/variables';
+@import '../abstract/mixin';
+
+.footer {
+  background-color: $footer-bg;
+  color: #fff;
+  padding: 8rem 2rem;
+  font-weight: 300;
+
+  &__inner {
+    max-width: $inner-max-width;
+    margin: 0 auto;
+    .footer__header {
+      padding-bottom: 2rem;
+
+    }
+    .footer__content {
+      padding-bottom: 4rem;
+
+    }
+    .footer__item {
+      font-size: 1.2rem;
+      padding: .3rem 0;
+      color: $footer-inactive;
+      font-weight: 300;
+    }
+    &__about {
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 300;
+        span {
+          color: $theme-primary;
+          font-size: 2rem;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+      }
+      &__social {
+        display: flex;
+        &__item {
+          a {
+            display: block;
+            height: 3rem;
+            width: 3rem;
+            background-color: #fff;
+            color: #000;
+            font-size: 1.4rem;
+            border-radius: 50%;
+            margin-right: 1rem;
+            text-align: center;
+            line-height: 3rem;
+            transition: all ease .3s;
+            &:hover {
+              background-color: $theme-primary;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    
+  }
+
+  &__copyright {
+    text-align: center;
+    font-size: 1.2rem;
+    i {
+      color: $dark-red;
+    }
+  }
+}
+
+@include respond(tab_screen) {
+  .footer {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      &__about {
+        width: 40%;
+      }
+    }
+  }
+}

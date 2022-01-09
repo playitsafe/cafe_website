@@ -1,28 +1,16 @@
-const menuControl = document.getElementById('menu__control');
-const menuDisplay = document.getElementById('menu__display');
+const animatedElements = document.getElementsByClassName('animate__animated');
 
+const waypoints = [];
 
-const menuControlWaypoint = new Waypoint({
-  element: menuControl,
-  handler: function() {
-    menuControl.classList.add('aniamted--fade_in_up');
-    menuControl.classList.remove('hidden');
-  },
-  offset: '80%'
-})
-
-const menuDisplayWaypoint = new Waypoint({
-  element: menuDisplay,
-  handler: function() {
-    menuDisplay.classList.add('aniamted--fade_in_up');
-    menuDisplay.classList.remove('hidden');
-  },
-  offset: '80%'
-})
-
-const waypoints = {
-  menuControlWaypoint,
-  menuDisplayWaypoint
+for (const el of animatedElements) {
+  waypoints.push(new Waypoint({
+    element: el,
+    handler: function() {
+      el.classList.add('animate__fadeInUp');
+      el.classList.remove('hide');
+    },
+    offset: '80%'
+  }))
 }
 
 export default waypoints;

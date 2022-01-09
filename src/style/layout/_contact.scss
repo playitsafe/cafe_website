@@ -1,4 +1,5 @@
+@import '../abstract/variables';
 .contact {
-  height: 100rem;
-  background-color: salmon;
+  height: 10rem;
+  background-color: $theme-secondary;
 }
