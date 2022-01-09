@@ -32,12 +32,12 @@
 
   <title>Czegs Cafe</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
   <header>
     <!-- Navbar starts -->
     <nav class="cafe__header navbar navbar-dark navbar-expand-sm fixed-top" id="navbar">
       <div class="container-fluid">
-        <a href="#" class="cafe__header__logo navbar-brand">Czeg<span>'</span>s</a>
+        <a href="#" class="cafe__header__logo navbar-brand">Czeg<span>'</span>s Cafe</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,9 +47,9 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="nav-items">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#menu">Menu</a>
@@ -59,9 +59,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#testimonial">Testimonial</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#map">Map</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -82,10 +79,10 @@
       <!-- Background Img End -->
       <div class="home__content">
         <div class="home__content__inner">
-          <p class="home__content__inner__subtitle aniamted--fade_in_up">ENJOY YOUR HEALTHY DELICIOUS MEAL</p>
-          <h1 class="home__content__inner__title aniamted--fade_in_up">Treat Yourself</h1>
-          <p class="home__content__inner__desc aniamted--fade_in_up">With an extensive breakfast and lunch menu which includes Gluten Free, Vegetarian and Vegan options as well as the best coffee!</p>
-          <a href="#" class="theme-button home__content__inner__btn aniamted--fade_in_up">Explore Now</a>
+          <p class="home__content__inner__subtitle animate__animated animate__fadeInUp">ENJOY YOUR HEALTHY DELICIOUS MEAL</p>
+          <h1 class="home__content__inner__title animate__animated animate__fadeInUp">Treat Yourself</h1>
+          <p class="home__content__inner__desc animate__animated animate__fadeInUp">With an extensive breakfast and lunch menu which includes Gluten Free, Vegetarian and Vegan options as well as the best coffee!</p>
+          <a href="#" class="theme-button home__content__inner__btn animate__animated animate__fadeInUp">Explore Now</a>
         </div>
       </div>
       <div class="home__social">
@@ -108,7 +105,7 @@
     </section>
     <section id="menu" class="menu__wrapper">
       <div class="menu">
-        <div class="menu__control hidden" id="menu__control">
+        <div class="menu__control animate__animated hide" id="menu__control">
           <div class="menu__control__header">
             <p>SELECT YOUR MEAL</p>
             <h2>Popular <span>Foods</span></h2>
@@ -132,7 +129,7 @@
             </li>
           </ul>
         </div>
-        <div class="menu__display hidden" id="menu__display">
+        <div class="menu__display animate__animated hide" id="menu__display">
           <ul class="menu-slider menu__display__pages">
             <!-- Breakfaset Menu -->
             <li class="menu__display__pages__section">
@@ -276,11 +273,11 @@
     </section>
     <section id="popular" class="popular__wrapper">
       <div class="popular">
-        <div class="popular__header">
+        <div class="popular__header animate__animated hide">
           <p>CHOOSE DESSERT</p>
           <h2>Popular <span>Desserts</span></h2>
         </div>
-        <ul class="popular__display">
+        <ul class="popular__display animate__animated hide">
           <li class="popular__display__grid">
             <a href="#" class="grid__inner">
               <div class="grid__inner__img">
@@ -336,7 +333,7 @@
       </div>
       <div class="gallery__content">
         <div class="gallery__content__inner">
-          <div class="gallery__content__inner__testimonials">
+          <div class="animate__animated hide gallery__content__inner__testimonials">
             <div class="gallery__content__inner__testimonials__header">
               <p>TESTIMONIALS</p>
               <h2>Satisfied <span>Customers</span></h2>
@@ -365,7 +362,7 @@
               </li>
             </ul>
           </div>
-          <div class="gallery__content__inner__photos">
+          <div class="animate__animated hide gallery__content__inner__photos">
             <div class="gallery__content__inner__photos__header">
               <p>GALLERIES</p>
               <h2>Photo <span>Galleries</span></h2>
@@ -400,13 +397,12 @@
               <a class="gallery__content__inner__photos__content__btn theme-button" href="#">MORE GALLERIES</a>
             </div>
           </div>
-
         </div>
       </div>
     </section>
-    <section id="map" class="map">
+    <section id="contact" class="map">
       <div class="map__inner">
-        <div class="map__inner__desc">
+        <div class="map__inner__desc animate__animated hide">
           <div class="map__inner__desc__header">
             <p>CONTACT US</p>
             <h2>Get In <span>Touch.</span></h2>
@@ -417,7 +413,7 @@
             <p>Email: info@czegscafe.com.au</p>
           </div>
         </div>
-        <div class="map__inner__map">
+        <div class="map__inner__map animate__animated hide">
           <div id="gmap" class="map__inner__map__content"></div>
         </div>
       </div>

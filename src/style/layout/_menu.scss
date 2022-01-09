@@ -44,7 +44,8 @@
             color: $theme-primary;
           }
           img {
-            width: 2.5rem;
+            max-width: 2.5rem;
+            max-height: 2.5rem;
           }
           span {
             font-size: 1.8rem;
@@ -55,7 +56,6 @@
     }
   
     &__display {
-      // background-color: red;
       &.hidden {
         visibility: hidden;
       }
