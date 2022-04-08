@@ -102,7 +102,7 @@ button, input[type=submit], input[type=reset] {
   height: 100vh;
 }
 .home__bg--inner {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.411), rgba(238, 163, 24, 0.337254902)), url("../../../resource/img/xhero_bg.webp");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.411), rgba(238, 163, 24, 0.337254902)), url("https://cdn.jsdelivr.net/gh/playitsafe/cdn/img/xhero_bg.webp");
   position: fixed;
   height: 100%;
   width: 100%;
@@ -474,7 +474,7 @@ button, input[type=submit], input[type=reset] {
 }
 .gallery__bg__img {
   position: fixed;
-  background-image: url("../../../resource/img/hero_bg2.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/playitsafe/cdn/img/hero_bg2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
