@@ -5,9 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./src/style/index.scss:./dist/style/index.css"
+    "start": "sass ./src/style/index.scss:./dist/style/index.css && http-server"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.50.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  }
 }
+
+
