@@ -19,6 +19,7 @@ npm i
 ```
 
 3. Start the project
+
 Compile sass files to css file and start the index page in live server on `http://127.0.0.1:8080/`
 ```
 npm run start
