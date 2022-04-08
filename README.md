@@ -11,14 +11,15 @@ Some libraries are used in this project including:
 # Start up
 1. Clone the repository
 ```
-git@github.com:playitsafe/cafe_website.git
+git clone git@github.com:playitsafe/cafe_website.git
 ```
 2. Install dependencies
 ```
 npm i
 ```
 
-3. Compile sass files to css file and start the index page in live server on `http://127.0.0.1:8080/`
+3. Start the project
+Compile sass files to css file and start the index page in live server on `http://127.0.0.1:8080/`
 ```
 npm run start
 ```
